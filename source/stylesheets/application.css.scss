@@ -1,0 +1,8 @@
+/*
+ *= require_tree ./vendor
+ *= require_tree ./lib
+ *= require bootstrap_and_overrides
+ *= require main
+ */
+
+ // DON'T REQUIRE TREE USE IMPORTS IN MAIN.CSS.SCSS!

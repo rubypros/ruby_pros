@@ -1,0 +1,30 @@
+doctype html
+= partial 'layouts/html_shim'
+html ng-app="myApp"
+  /![endif]
+  head
+    title = "#{data.page.title} | Hello, World" || "Hello, World!"
+
+    = partial 'layouts/browser_metatags'
+    = partial 'layouts/description_metatags'
+    = partial 'layouts/open_graph_metatags'
+    = partial 'layouts/app_icons'
+
+    - #CSS
+    = stylesheet_link_tag "application"
+
+  body class="#{page_classes}" ng-controller="AppController"
+    = partial 'layouts/navbar'
+
+    = yield
+
+    - # JAVASCRIPTS
+    - if build?
+      = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js'
+      = javascript_include_tag '//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js'
+      = javascript_include_tag '//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.13/angular.min.js'
+    = javascript_include_tag 'application'
+
+    - # GOOGLE ANALYTICS
+    - if build?
+      = partial 'layouts/google_analytics'
