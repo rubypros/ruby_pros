@@ -3,3 +3,6 @@
 .ruby-version
 .ruby-gemset
 .ruby-gemrc
+.gemrc
+
+build/*
