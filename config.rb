@@ -48,6 +48,7 @@
 # Gem
 ###
 require 'slim'
+require 'font-awesome-sass'
 
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
@@ -57,10 +58,6 @@ set :images_dir, 'images'
 configure :build do
   # Ignore these files during build:
   ignore 'images/*.psd'
-  ignore 'stylesheets/lib/*'
-  ignore 'stylesheets/vendor/*'
-  ignore 'javascripts/lib/*'
-  ignore 'javascripts/vendor/*'
 
   # For example, change the Compass output style for deployment
   activate :minify_css
