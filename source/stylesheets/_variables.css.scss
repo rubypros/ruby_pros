@@ -17,10 +17,17 @@ $gray-lighter:           lighten(#000, 90%) !default; // #eee
 
 $brand-primary:         #007FFF !default;
 $brand-success:         #3FB618 !default;
-$brand-info:            #9954BB !default;
+$brand-info:            #fff !default;
 $brand-warning:         #FF7518 !default;
 $brand-danger:          #FF0039 !default;
 
+$red-bg: #AE4425 !default;
+$red-light: #F38055 !default;
+$red-medium: #DB613A !default;
+$red-dark: #86341D !default;
+$red-darkest: #562012 !default;
+
+$white: #fff;
 
 //== Scaffolding
 //
@@ -182,8 +189,8 @@ $btn-success-color:              $btn-default-color !default;
 $btn-success-bg:                 $brand-success !default;
 $btn-success-border:             $btn-success-bg !default;
 
-$btn-info-color:                 $btn-default-color !default;
-$btn-info-bg:                    $brand-info !default;
+$btn-info-color:                 $red-darkest !default;
+$btn-info-bg:                    $white !default;
 $btn-info-border:                $btn-info-bg !default;
 
 $btn-warning-color:              $btn-default-color !default;

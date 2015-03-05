@@ -1,8 +1,13 @@
 /*
  *= require_tree ./vendor
  *= require_tree ./lib
- *= require bootstrap_and_overrides
- *= require main
- */
+*/
 
- // DON'T REQUIRE TREE USE IMPORTS IN MAIN.CSS.SCSS!
+@import "variables"; // Bootswatch Cosmo Theme Custom Variables
+@import "mixins";
+@import "bootstrap";
+@import "bootswatch"; // Bootswatch Cosmo Theme
+@import "font-awesome-compass";
+@import "font-awesome";
+@import "navbar";
+@import "main";

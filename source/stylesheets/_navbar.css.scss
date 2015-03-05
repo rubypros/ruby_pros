@@ -1,0 +1,71 @@
+.navbar-default .navbar-brand {
+    color: #fff;
+}
+.navbar-default {
+    font-size: 14px;
+    background-color: $red-bg;
+    border-width: 0px;
+    border-radius: 0px;
+}
+.navbar-default .navbar-nav>li>a {
+    color: rgba(255, 255, 255, 1);
+    background-color: $red-bg;
+}
+.navbar-default .navbar-nav>li>a:hover,
+.navbar-default .navbar-nav>li>a:focus {
+    color: $red-light;
+    background-color: $red-bg;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus {
+    color: $red-light;
+    background-color: $red-bg;
+}
+.navbar-default .navbar-toggle {
+    border-color: $red-bg;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+    background-color: $red-bg;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: $red-bg;
+}
+.navbar-default .navbar-toggle:hover .icon-bar,
+.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: $red-bg;
+}
+
+
+.navbar {
+  margin-bottom: 0px;
+  border: none;
+
+  .navbar-brand {
+    &:hover {
+      color: $red-light;
+    }
+  }
+
+  .navbar-header.pull-right {
+    li {
+
+      &.navigation {
+        margin-right: 20px;
+      }
+
+      a {
+        color: $white;
+        vertical-align: middle;
+        display: table-cell;
+        height: 50px;
+
+        &:hover, &:focus {
+          text-decoration: none;
+          color: $red-light;
+        }
+      }
+    }
+  }
+}
